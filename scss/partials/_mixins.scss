@@ -1,0 +1,76 @@
+$notosans-fontface-path: '../../fonts' !default;
+@mixin notosans-fontface($type, $weight, $style) {
+    @font-face {
+        font-family: 'Noto Sans';
+        src: local('Noto Sans #{$type}'),
+        local('NotoSans-#{$type}'),
+        url('#{$notosans-fontface-path}/NotoSans-#{$type}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin notosansjp-fontface($type,
+$weight,
+$style) {
+    @font-face {
+        font-family: 'Noto Sans JP';
+        src: local('Noto Sans CJK JP #{$type}'),
+        local('NotoSansCJKjp-#{$type}'),
+        url('#{$notosans-fontface-path}/NotoSansCJKjp-#{$type}.otf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+
+/* on supprime les contours des éléments au focus */
+
+@mixin suppr-contour {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Centrer horizontalement ou verticalement */
+
+@mixin center($xy:xy) {
+    @if $xy==xy {
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    @else if $xy==x {
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    @else if $xy==y {
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@mixin vertical {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    /* ancien IE */
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
