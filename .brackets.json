@@ -9,7 +9,8 @@
                 "sourceComments": false,
                 "outputStyle": "compressed"
             },
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "brackets-git.gitPath": "git"
         }
     }
 }

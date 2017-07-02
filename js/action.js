@@ -4,23 +4,17 @@
 // scroll effect
 
 $(document).ready(function () {
-    $('ol.navigation a').on('click', function () {
+    $('ul.menu a').on('click', function () {
         var page = $(this).attr('href'); // Page cible
         var speed = 1500; // Durée de l'animation (en ms)
-        //var pagecurrent = $(this).attr('href').replace('#', '');
 
-        $('ol.navigation a').removeClass('isActive'); //suppr couleur du lien (menu)
-        $(this).addClass('isActive'); //on ajoute une couleur le lien sélectionné
-
-
-        //$('.contenu').fadeOut(1500); // disparition de la section
-        //$('.' + pagecurrent + ' .contenu').fadeIn(1500); // apparition de l'img
-
+        $('#overlay').fadeOut(1000); // on fait disparaitre l'overlay au clique
+        $('.bouton_mobile').removeClass('isActive');
+        
         $('html, body').stop().animate({
             scrollTop: $(page).offset().top
         }, speed, function () {
             location.hash = page;
-            //$('.' + pagecurrent).css('left','0');
         });
 
         return false;
@@ -53,5 +47,20 @@ $(document).ready(function () {
 
         return false;
 
+    });
+});
+
+//Activer le bouton menu
+$(document).ready(function () {
+    $('.bouton_mobile').click(function () {
+        $(this).toggleClass('isActive');
+        $('#overlay').fadeToggle();
+    });
+});
+
+$(document).ready(function () {
+    $('#overlay').click(function () {
+        $('.bouton_mobile').removeClass('isActive');
+        $('#overlay').fadeToggle();
     });
 });

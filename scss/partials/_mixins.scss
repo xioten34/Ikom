@@ -1,23 +1,26 @@
 $notosans-fontface-path: '../../fonts' !default;
-@mixin notosans-fontface($type, $weight, $style) {
+@mixin aileron-fontface($weight, $style) {
     @font-face {
-        font-family: 'Noto Sans';
-        src: local('Noto Sans #{$type}'),
-        local('NotoSans-#{$type}'),
-        url('#{$notosans-fontface-path}/NotoSans-#{$type}.ttf') format('truetype');
+        font-family: 'Aileron';
+        src: url('../fonts/Ailerons-Typeface.otf');
         font-weight: $weight;
         font-style: $style;
     }
 }
 
-@mixin notosansjp-fontface($type,
-$weight,
-$style) {
+@mixin oswald-fontface($weight, $style) {
     @font-face {
-        font-family: 'Noto Sans JP';
-        src: local('Noto Sans CJK JP #{$type}'),
-        local('NotoSansCJKjp-#{$type}'),
-        url('#{$notosans-fontface-path}/NotoSansCJKjp-#{$type}.otf') format('truetype');
+        font-family: 'OswaldExtraLight';
+        src: url('../fonts/Oswald-ExtraLight.ttf');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin opensans-fontface($type, $weight, $style) {
+    @font-face {
+        font-family: 'OpenSans#{$type}';
+        src: url('../fonts/OpenSans-#{$type}.ttf');
         font-weight: $weight;
         font-style: $style;
     }
