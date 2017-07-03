@@ -111,7 +111,7 @@
               display: block;
               position: fixed;
               z-index: 20;
-              bottom: 20px;
+              bottom: 30px;
               height: 44px;
               width: 44px;
               @include center(x);
@@ -316,20 +316,24 @@
               justify-content: center;
               #titleIkom {
                   /* padding-top: 150px; */
-              }
-              h1 {
-                  font-family: "OswaldExtraLight";
-                  font-size: 20px;
-                  margin-bottom: 10px;
-              }
-              h2 {
-                  font-family: "Aileron";
-                  font-size: 40px;
-                  margin-bottom: 15px;
-              }
-              h3 {
-                  font-family: "Aileron";
-                  font-size: 15px;
+                  img{
+                      width: 50px;
+                      height: auto;
+                  }
+                  h1 {
+                      font-family: "OswaldExtraLight";
+                      font-size: 20px;
+                      margin-bottom: 10px;
+                  }
+                  h2 {
+                      font-family: "Aileron";
+                      font-size: 40px;
+                      margin-bottom: 15px;
+                  }
+                  h3 {
+                      font-family: "Aileron";
+                      font-size: 15px;
+                  }
               }
               .little {
                   width: 15%;
@@ -613,7 +617,7 @@
                               width: 70%;
                               padding: 10px;
                               transition: border-bottom .5s;
-                              @media (max-width: 770px){
+                              @media (max-width: 770px) {
                                   width: 90%;
                               }
                               &:focus {
@@ -628,7 +632,7 @@
                               width: 150px;
                               cursor: pointer;
                               transition: all 1s;
-                              @media (max-width: 770px){
+                              @media (max-width: 770px) {
                                   width: 70%;
                               }
                               &:focus {
@@ -651,7 +655,7 @@
                               margin-top: 10px;
                               color: black;
                               transition: border .5s;
-                              @media (max-width: 770px){
+                              @media (max-width: 770px) {
                                   width: 90%;
                               }
                               &:focus {
@@ -663,7 +667,10 @@
                   }
               }
               .copyright {
-                  margin-top: 20px;
+                  font-family: "OpenSansRegular";
+                  font-size: 10px;
+                  text-align: center;
+                  margin: 40px 0 25px 0;
               }
           }
       }

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="En">
 
 <head>
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="description" content="Jaillot Damien - Portfolio webdesign">
+    <meta name="description" content="Ikom - Web agency specialized in tourism">
     <!-- Titre -->
     <title>Ikom - Web Agency</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" href="../images/logoIkom.png">
+
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="../css/style.css" />
 
@@ -29,62 +33,13 @@
     </div>
 
     <!-- /////////////////////////////////////////////////////////////
-   ///////////////// SECTIONS DU SITE ///////////////////////////
+   ///////////////// ANGLE ///////////////////////////
    //////////////////////////////////////////////////////////////////
    ///////////////////////////////////////////////////-->
-    <!--<div class="grpslider">-->
-    <!-- ACCUEIL -->
-    <section id="home" class="slider home">
-        <div class="contenu">
-            <!-- On met le logo, la phrase de bienvenue et les boutons des langues (en haut à droite) dans le header -->
-            <h1>
-            </h1>
-            <!--<p id="page_courante">HOME</p>
-            <ol class="navigation">
-                <li>home</li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">work</a></li>   
-            </ol>-->
-        </div>
-    </section>
 
-    <!-- A PROPOS -->
-    <section id="about" class="slider about">
-        <div class="contenu">
-            <h1>
-            </h1>
-            <div class="slider_content">
-                <h2></h2>
-                <h3></h3>
-            </div>
-            <!--<p id="page_courante">ABOUT</p>
-            <ol class="navigation">
-                <li><a href="#home">home</a></li>
-                <li>about</li>
-                <li><a href="#work">work</a></li>   
-            </ol>-->
-        </div>
-    </section>
+    <div class="wrapper">
 
-    <!-- GALERIE -->
-    <section id="work" class="slider work">
-        <div class="contenu">
-            <h1>
-            </h1>
-            <div class="slider_content">
-                <h2></h2>
-                <h3></h3>
-            </div>
-            <!-- <p id="page_courante">WORK</p>
-            <ol class="navigation">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li>work</li>
-            </ol>-->
-        </div>
-    </section>
-    <!-- </div>-->
-    <!-- fin du contenu -->
+    </div>
 
     <!-- /////////////////////////////////////////////////////////////
    ///////////////// HEADER ///////////////////////////
@@ -92,30 +47,185 @@
    /////////////////////////////////////////////////// -->
 
     <div class="slider_content">
-        <h2>Welcome to our website</h2>
+        <img src="../images/logo_ikom.png" alt="Ikom - web agency specialized in tourism"/>
+        <h2>Welcome</h2>
         <ul class="langage">
+            <li><a href="index.html" style="color:darkred;">EN</a></li>
             <li><a href="../index.html">FR</a></li>
-            <li><a href="../jp/index.html">JP</a></li>
-            <li class="lastlang"><a href="index.html" style="color:darkred;">EN</a></li>
+            <li class="lastlang"><a href="../jp/index.html">JP</a></li>
         </ul>
     </div>
+
     <!-- /////////////////////////////////////////////////////////////
-   ///////////////// MENU ///////////////////////////
+   ///////////////// OVERLAY + BOUTON MENU ///////////////////////////
    //////////////////////////////////////////////////////////////////
-   /////////////////////////////////////////////////// -->
+   ///////////////////////////////////////////////////-->
 
-    <ol class="navigation">
-        <li>
-            <a href="#home">HOME</a>
-        </li>
-        <li>
-            <a href="#about">ABOUT</a>
-        </li>
-        <li class="last">
-            <a href="#work">WORK</a>
-        </li>
-    </ol>
+    <!-- menu overlay -->
+    <div id="overlay">
+        <div>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">AGENCY</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#work">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
 
+
+    <!-- Bouton menu fullscreen ici les span c'est pour créer les traits du hamburger, tu peux changer -->
+    <button class="bouton_mobile cd-image-replace"><span></span>
+    <span></span>
+    <span></span></button>
+
+    <!-- /////////////////////////////////////////////////////////////
+   ///////////////// SECTIONS DU SITE ///////////////////////////
+   //////////////////////////////////////////////////////////////////
+   ///////////////////////////////////////////////////-->
+    <!-- ACCUEIL -->
+    <section id="home" class="slider home">
+        <div id="titleIkom">
+            <img src="../images/logo_ikom.png" alt="ikom - web agency specialized in tourism">
+            <hr class="little">
+            <h1>
+                Web agency specialized <br> in
+            </h1>
+            <h2>tourism<br>communication</h2>
+            
+            <hr class="big">
+            <h3>
+                Looking for freedom
+            </h3>
+        </div>
+    </section>
+
+    <!-- L'AGENCE -->
+    <section id="about" class="slider about">
+        <h2>Agency</h2>
+        <hr class="little">
+        <p class="textAgence">
+            Founded in 2016 and based in Montpellier, IKOM is an international print and web communication agency specializing in tourism and travel agency support. Our objective ? Let you benefit from our expertise in Graphics and the Web to develop and reach a new target. Consisting of a young and dynamic team, we make every effort to realize your projects. 
+        </p>
+        <hr class="big">
+        <div class="listArticle">
+            <article>
+                <img src="../images/icons/Icones-web-competence.png" alt="Compétences web et print">
+                <p>
+                    In order to fulfill your craziest desires you will be supported by two designers of websites specializing in design and ergonomics. But IKOM is also two graphic designers passionate and professional, strong proposals that will transcribe the character of your company.
+
+                </p>
+            </article>
+            <article>
+                <img src="../images/icons/Icones-web-acco.png" alt="Accompagnement">
+                <p>
+                    Composed of a team with multiplex talents, the agency IKOM accompanies you in your search for notoriety. Throughout your project we remain at your disposal and do everything possible to achieve your objectives.
+                </p>
+            </article>
+            <article>
+                
+                <img src="../images/icons/Icones-web-terre.png" alt="International">
+                <p>
+                    Whether you are in France or around the world, you can benefit from our expertise in the field of Communication. Indeed, our agency is present in many countries given that our team is multilingual. It is then also possible to have an international scope.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- L'EQUIPE -->
+    <section id="team" class="slider team">
+        <div class="equip">
+            <h2>Team</h2>
+            <hr>
+            <div class="listTeam">
+                <article>
+                    <img src="../images/team/team_biker.png" alt="Logo 1">
+                    <p>
+                        <b>Nathan</b><br> developer
+                    </p>
+                </article>
+                <article>
+                    <img src="../images/team/team_shiba.png" alt="Logo 1">
+                    <p>
+                        <b>Guillaume</b><br> Project Manager
+                    </p>
+                </article>
+                <article>
+                    <img src="../images/team/team_minnie.png" alt="Logo 1">
+                    <p>
+                        <b>Clémence</b><br> Graphic Designer
+                    </p>
+                </article>
+                <article>
+                    <img src="../images/team/team_bob.png" alt="Logo 1">
+                    <p>
+                        <b>Damien</b><br> Web Designer
+                    </p>
+                </article>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOS PROJETS -->
+    <section id="work" class="slider work">
+        <h2>PROJECTS</h2>
+        <hr>
+        <div class="listProject">
+            <article>
+                <img src="../images/projets/logo_maison.png" alt="Ma Maison facile">
+                <p>
+                    Project in progress. This agency has called us for the realization of all their web content as well as their communication. A very interesting project that has been entrusted to us, this one will be completed in 2017.
+                </p>
+            </article>
+            <article>
+                <img src="../images/projets/arbousier.png" alt="Arbousier">
+                <p>
+                    A vineyard that has told us many projects to achieve. Indeed, L'Arbousier trusts us for the implementation of their communication whether in print or web. Projects have already begun and will be completed by 2017.
+                </p>
+            </article>
+        </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact" class="slider contact">
+        <h2>CONTACT</h2>
+        <hr>
+        <div class="listContact">
+            <article>
+                <img src="../images/logo_ikom.png" alt="Logo">
+                <p>
+                    Adress : <br>
+                    1702 rue Saint-Priest <br> 34090 Montpellier
+                    <br><br>
+                    Tel : <br>
+                    06 12 34 56 87
+                    <br><br>
+                    Mail : <br>
+                    contact[at]ikom[dot]com
+                </p>
+            </article>
+            <article>
+                <form action="#">
+                    <input type="text" name="firstname" placeholder="Name">
+                    <br>
+                    <input type="text" name="lastname" placeholder="Mail adress">
+                    <br>
+                    <textarea rows="4" placeholder="Our request"></textarea>
+                    <br><br>
+                    <input type="submit" value="Send">
+                </form> 
+            </article>
+        </div>
+        <div class="copyright">Copyright 2017 ©Ikom - All rights reserved - Legal notice</div>
+    </section>
+    
+    
+    
+    <!-- fin du contenu -->
+    
+    
 
     <!-- /////////////////////////////////////////////////////////////
    ///////////////// RESSOURCES JAVASCRIPT ///////////////////////////
@@ -127,6 +237,9 @@
 
     <!-- JS pour activer le bouton menu, scroll et clic -->
     <script src="../js/action.js"></script>
+
+    <!--webGl-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>
 
 </body>
 
