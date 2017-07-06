@@ -18,6 +18,22 @@
     <!-- CSS -->
     <link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
 
+    <!-- on détecte la langue de l'utilisateur -->
+    <script>
+        if (navigator.userLanguage) //Si InternetExplorer v. < 11
+            var x = navigator.userLanguage;
+        else
+            var x = navigator.language;
+
+        if (x = "fr") document.location.href = 'index.html';
+        else if (x = "en") document.location.href = 'en/index.html';
+        else if (x = "jp") document.location.href = 'jp/index.html';
+
+        else document.location.href = 'en/index.html'; // Page par défaut si la langue n'est pas reconnue.
+        
+        return false;
+    </script>
+
 </head>
 
 <body>
@@ -30,15 +46,6 @@
         <div></div>
         <div></div>
         <div></div>
-    </div>
-
-    <!-- /////////////////////////////////////////////////////////////
-   ///////////////// ANGLE ///////////////////////////
-   //////////////////////////////////////////////////////////////////
-   ///////////////////////////////////////////////////-->
-
-    <div class="wrapper">
-
     </div>
 
     <!-- /////////////////////////////////////////////////////////////
@@ -105,33 +112,35 @@
 
     <!-- L'AGENCE -->
     <section id="about" class="slider about">
-        <h2>L'agence</h2>
-        <hr class="little">
-        <p class="textAgence">
-            Créée en 2016 et basée à Montpellier, IKOM est une <strong>agence de communication Print et Web internationale spécialisée dans le tourisme et l'accompagnement des agences de voyage</strong>. Notre objectif ? Vous faire profiter de notre expertise dans le Graphisme et le Web afin de vous développer et atteindre une nouvelle cible. Constituée d’une équipe jeune et dynamique, nous mettont tout en œuvre pour réaliser vos projets. 
-        </p>
-        <hr class="big">
-        <div class="listArticle">
-            <article>
-                <img src="images/icons/Icones-web-competence.png" alt="Compétences web et print">
-                <p>
-                    Afin de réaliser vos envies les plus folles vous serez épaulés par <strong>deux concepteurs de sites web</strong> spécialisés dans le design et l’ergonomie. Mais IKOM c’est aussi <strong>deux graphistes</strong> passionnés et professionnels, forts de propositions qui sauront retranscrire le caractère de votre entreprise.
+        <div class="agence">
+            <h2>L'agence</h2>
+            <hr class="little">
+            <p class="textAgence">
+                Créée en 2016 et basée à Montpellier, IKOM est une <strong>agence de communication Print et Web internationale spécialisée dans le tourisme et l'accompagnement des agences de voyage</strong>. Notre objectif ? Vous faire profiter de notre expertise dans le Graphisme et le Web afin de vous développer et atteindre une nouvelle cible. Constituée d’une équipe jeune et dynamique, nous mettont tout en œuvre pour réaliser vos projets.
+            </p>
+            <hr class="big">
+            <div class="listArticle">
+                <article>
+                    <img src="images/icons/Icones-web-competence.png" alt="Compétences web et print">
+                    <p>
+                        Afin de réaliser vos envies les plus folles vous serez épaulés par <strong>deux concepteurs de sites web</strong> spécialisés dans le design et l’ergonomie. Mais IKOM c’est aussi <strong>deux graphistes</strong> passionnés et professionnels, forts de propositions qui sauront retranscrire le caractère de votre entreprise.
 
-                </p>
-            </article>
-            <article>
-                <img src="images/icons/Icones-web-acco.png" alt="Accompagnement">
-                <p>
-                    Composée d’une équipe aux multiplex talents, <strong>l’agence IKOM vous accompagne</strong> dans votre recherche de notoriété. Tout au long de votre projet nous restons à votre écoute et mettons tout en oeuvre pour atteindre vos objectifs.
-                </p>
-            </article>
-            <article>
-                
-                <img src="images/icons/Icones-web-terre.png" alt="International">
-                <p>
-                    Que vous vous trouviez en <strong>France ou dans le monde entier</strong> vous pourrez profiter de notre <strong>expertise dans le domaine de la Communication</strong>. En effet, notre agence est présente dans de nombreux pays étant donné que notre équipe est multilingue. Il est alors aussi possible d'avoir un <strong>porté internationale</strong>.
-                </p>
-            </article>
+                    </p>
+                </article>
+                <article>
+                    <img src="images/icons/Icones-web-acco.png" alt="Accompagnement">
+                    <p>
+                        Composée d’une équipe aux multiplex talents, <strong>l’agence IKOM vous accompagne</strong> dans votre recherche de notoriété. Tout au long de votre projet nous restons à votre écoute et mettons tout en oeuvre pour atteindre vos objectifs.
+                    </p>
+                </article>
+                <article>
+
+                    <img src="images/icons/Icones-web-terre.png" alt="International">
+                    <p>
+                        Que vous vous trouviez en <strong>France ou dans le monde entier</strong> vous pourrez profiter de notre <strong>expertise dans le domaine de la Communication</strong>. En effet, notre agence est présente dans de nombreux pays étant donné que notre équipe est multilingue. Il est alors aussi possible d'avoir un <strong>porté internationale</strong>.
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -172,62 +181,75 @@
 
     <!-- NOS PROJETS -->
     <section id="work" class="slider work">
-        <h2>Nos projets</h2>
-        <hr>
-        <div class="listProject">
-            <article>
-                <img src="images/projets/logo_maison.png" alt="Ma Maison facile">
-                <p>
-                    Projet en cours de réalisation. Cette agence a fait appelle à nous pour la réalisation de l'ensemble de leur contenu web ainsi que de leur communication. Un projet très intéressant qui nous a été confié, celui-ci sera achevé courant 2017.
-                </p>
-            </article>
-            <article>
-                <img src="images/projets/arbousier.png" alt="Arbousier">
-                <p>
-                    Un vignoble qui nous a fait part de nombreux projets à réaliser. En effet, L'Arbousier nous fait confiance pour la mise en place de leur communication que ce soit en print ou en web. Les projets ont déjà commencé et seront achevé courant 2017.
-                </p>
-            </article>
+        <div class="projet">
+            <h2>Nos projets</h2>
+            <hr>
+            <div class="listProject">
+               <article>
+                    <img src="images/projets/arbousier.png" alt="Arbousier">
+                    <p>
+                        Un vignoble qui nous a fait part de nombreux projets à réaliser. En effet, L'Arbousier nous fait confiance pour la mise en place de leur communication que ce soit en print ou en web. Les projets ont déjà commencé et seront achevé courant 2017.
+                    </p>
+                </article>
+                <article>
+                    <img src="images/projets/logo_maison.png" alt="Ma Maison facile">
+                    <p>
+                        Projet en cours de réalisation. Cette agence a fait appelle à nous pour la réalisation de l'ensemble de leur contenu web ainsi que de leur communication. Un projet très intéressant qui nous a été confié, celui-ci sera achevé courant 2017.
+                    </p>
+                </article>
+                <article>
+                    <img src="images/projets/arbousier.png" alt="Arbousier">
+                    <p>
+                        Un vignoble qui nous a fait part de nombreux projets à réaliser. En effet, L'Arbousier nous fait confiance pour la mise en place de leur communication que ce soit en print ou en web. Les projets ont déjà commencé et seront achevé courant 2017.
+                    </p>
+                </article>
+                <article>
+                    <img src="images/projets/logo_maison.png" alt="Ma Maison facile">
+                    <p>
+                        Projet en cours de réalisation. Cette agence a fait appelle à nous pour la réalisation de l'ensemble de leur contenu web ainsi que de leur communication. Un projet très intéressant qui nous a été confié, celui-ci sera achevé courant 2017.
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
-    
+
     <!-- CONTACT -->
     <section id="contact" class="slider contact">
-        <h2>Nous contacter</h2>
-        <hr>
-        <div class="listContact">
-            <article>
-                <img src="images/logo_ikom.png" alt="Logo">
-                <p>
-                    Adresse : <br>
-                    1702 rue Saint-Priest <br> 34090 Montpellier
-                    <br><br>
-                    Tel : <br>
-                    06 12 34 56 87
-                    <br><br>
-                    Mail : <br>
-                    contact[at]ikom[dot]com
-                </p>
-            </article>
-            <article>
-                <form action="#">
-                    <input type="text" name="firstname" placeholder="Nom">
-                    <br>
-                    <input type="text" name="lastname" placeholder="Adresse Mail">
-                    <br>
-                    <textarea rows="4" placeholder="Votre demande"></textarea>
-                    <br><br>
-                    <input type="submit" value="Envoyer">
-                </form> 
-            </article>
+        <div class="contacter">
+            <h2>Nous contacter</h2>
+            <hr>
+            <div class="listContact">
+                <article>
+                    <img src="images/logo_ikom.png" alt="Logo">
+                    <p>
+                        Adresse : <br> 1702 rue Saint-Priest <br> 34090 Montpellier
+                        <br><br> Tel : <br> 06 12 34 56 87
+                        <br><br> Mail : <br> contact[at]ikom[dot]com
+                    </p>
+                </article>
+                <article>
+                    <form action="#">
+                        <input type="text" name="firstname" placeholder="Nom">
+                        <br>
+                        <input type="text" name="lastname" placeholder="Adresse Mail">
+                        <br>
+                        <textarea rows="4" placeholder="Votre demande"></textarea>
+                        <br><br>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </article>
+            </div>
         </div>
-        <div class="copyright">Copyright 2017 ©Ikom - Tous droits réservés - Mentions légales</div>
     </section>
-    
-    
-    
+    <footer>
+        <div class="copyright">Copyright 2017 ©Ikom - Tous droits réservés - Mentions légales</div>
+    </footer>
+
+
+
     <!-- fin du contenu -->
-    
-    
+
+
 
     <!-- /////////////////////////////////////////////////////////////
    ///////////////// RESSOURCES JAVASCRIPT ///////////////////////////

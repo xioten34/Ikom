@@ -244,7 +244,7 @@
               }
               h2 {
                   float: left;
-                  font-size: 12px;
+                  font-size: 16px;
                   margin-left: 5px;
                   @media (max-width: 600px) {
                       font-size: 12px;
@@ -254,7 +254,7 @@
                   /* menu langage */
                   float: right;
                   margin: 0;
-                  font-size: 12px;
+                  font-size: 16px;
                   margin-right: 30px;
                   @media (max-width: 600px) {
                       margin-right: 20px;
@@ -316,7 +316,7 @@
               justify-content: center;
               #titleIkom {
                   /* padding-top: 150px; */
-                  img{
+                  img {
                       width: 50px;
                       height: auto;
                   }
@@ -351,78 +351,85 @@
           .about {
               background: $blanc;
               min-height: 100vh;
-              font-size: 10px;
-              h2 {
-                  text-align: center;
-                  font-family: "Aileron";
-                  font-size: 50px;
-                  margin-bottom: 70px;
-                  padding-top: 70px;
-              }
-              h3,
-              strong {
-                  font-weight: bold;
-              }
-              .little {
-                  width: 15%;
-                  border: 0;
-                  height: 1px;
-                  background-image: linear-gradient(to right, transparent, #999, transparent);
-              }
-              .big {
-                  width: 25%;
-                  border: 0;
-                  height: 1px;
-                  background-image: linear-gradient(to right, transparent, #999, transparent);
-              }
-              .textAgence {
-                  width: 45%;
-                  margin: auto;
-                  padding-top: 20px;
-                  padding-bottom: 20px;
-                  font-family: "OpenSansRegular";
-                  text-align: justify;
-                  line-height: 20px;
-                  @media (max-width: 500px) {
-                      width: 80%;
-                  }
-              }
-              .listArticle {
-                  margin: 20px auto;
-                  width: 100%;
-                  left: 0;
-                  text-align: center;
-                  position: relative;
-                  @media (max-width: 500px) {
-                      width: 80%;
-                  }
-                  article {
-                      margin: 30px auto;
-                      width: 20%;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .agence {
+                  h2 {
                       text-align: center;
-                      position: relative;
-                      display: inline-block;
-                      vertical-align: top;
+                      font-family: "Aileron";
+                      font-size: 50px;
+                      margin-bottom: 70px;
+                      padding-top: 70px;
+                  }
+                  h3,
+                  strong {
+                      font-weight: bold;
+                  }
+                  .little {
+                      width: 15%;
+                      border: 0;
+                      height: 1px;
+                      background-image: linear-gradient(to right, transparent, #999, transparent);
+                  }
+                  .big {
+                      width: 25%;
+                      border: 0;
+                      height: 1px;
+                      background-image: linear-gradient(to right, transparent, #999, transparent);
+                  }
+                  .textAgence {
+                      width: 45%;
+                      margin: auto;
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                      font-family: "OpenSansRegular";
+                      text-align: justify;
+                      line-height: 20px;
                       @media (max-width: 500px) {
                           width: 80%;
                       }
                   }
-                  p {
-                      padding-top: 15px;
-                      width: 92%;
-                      text-align: left;
-                      margin: auto;
-                      text-align: justify;
-                      font-family: "OpenSansRegular";
+                  .listArticle {
+                      margin: 20px auto;
+                      width: 100%;
+                      left: 0;
+                      text-align: center;
+                      position: relative;
                       @media (max-width: 500px) {
-                          width: 75%;
+                          width: 80%;
                       }
-                  }
-                  img {
-                      width: 15%;
-                      display: inline;
-                      @media (max-width: 900px) {
+                      article {
+                          margin: 30px auto;
                           width: 20%;
+                          text-align: center;
+                          position: relative;
+                          display: inline-block;
+                          vertical-align: top;
+                          @media (max-width: 500px) {
+                              width: 80%;
+                          }
+                      }
+                      p {
+                          padding-top: 15px;
+                          width: 92%;
+                          text-align: left;
+                          margin: auto;
+                          text-align: justify;
+                          font-family: "OpenSansRegular";
+                          @media (max-width: 500px) {
+                              width: 75%;
+                          }
+                      }
+                      img {
+                          width: 15%;
+                          display: inline;
+                          @media (max-width: 900px) {
+                              width: 20%;
+                          }
                       }
                   }
               }
@@ -501,176 +508,202 @@
           .work {
               background: $blanc;
               min-height: 100vh;
-              font-size: 10px;
-              h2 {
-                  text-align: center;
-                  font-family: "Aileron";
-                  font-size: 40px;
-                  margin-bottom: 70px;
-                  padding-top: 70px;
-                  color: black;
-              }
-              hr {
-                  width: 20%;
-                  border: 0;
-                  height: 1px;
-                  background-image: linear-gradient(to right, transparent, #999, transparent);
-              }
-              .listProject {
-                  margin: 20px auto;
-                  width: 100%;
-                  left: 0;
-                  text-align: center;
-                  position: relative;
-                  @media (max-width: 500px) {
-                      width: 80%;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .projet {
+                  h2 {
+                      text-align: center;
+                      font-family: "Aileron";
+                      font-size: 40px;
+                      margin-bottom: 70px;
+                      padding-top: 70px;
+                      color: black;
                   }
-                  article {
-                      margin: 20px auto;
+                  hr {
                       width: 20%;
+                      border: 0;
+                      height: 1px;
+                      background-image: linear-gradient(to right, transparent, #999, transparent);
+                  }
+                  .listProject {
+                      margin: 20px auto;
+                      width: 100%;
+                      left: 0;
                       text-align: center;
                       position: relative;
-                      display: inline-block;
-                      vertical-align: top;
                       @media (max-width: 500px) {
                           width: 80%;
                       }
-                      p {
-                          padding-top: 10px;
-                          width: 92%;
-                          text-align: left;
-                          margin: auto;
-                          text-align: justify;
-                          font-family: "OpenSansRegular";
+                      article {
+                          margin: 20px auto;
+                          width: 20%;
+                          text-align: center;
+                          position: relative;
+                          display: inline-block;
+                          vertical-align: top;
                           @media (max-width: 500px) {
-                              width: 75%;
+                              width: 80%;
+                          }
+                          @media (min-width:1400px){
+                              width:10%;
+                          }
+                          p {
+                              padding-top: 10px;
+                              width: 92%;
+                              text-align: left;
+                              margin: auto;
+                              text-align: justify;
+                              font-family: "OpenSansRegular";
+                              @media (max-width: 500px) {
+                                  width: 75%;
+                              }
                           }
                       }
-                  }
-                  img {
-                      width: 60%;
-                      display: inline;
+                      img {
+                          width: 60%;
+                          display: inline;
+                      }
                   }
               }
           }
           .contact {
               background: url(../images/background/agence_communication_touristique_white.jpg);
               min-height: 100vh;
-              font-size: 10px;
-              h2 {
-                  text-align: center;
-                  font-family: "Aileron";
-                  font-size: 40px;
-                  margin-bottom: 70px;
-                  margin-top: 70px;
-              }
-              hr {
-                  width: 25%;
-                  border: 0;
-                  height: 1px;
-                  background-image: linear-gradient(to right, transparent, #999, transparent);
-              }
-              .listContact {
-                  margin: 20px auto;
-                  width: 100%;
-                  left: 0;
-                  text-align: center;
-                  position: relative;
-                  @media (max-width: 770px) {
-                      width: 80%;
+              -webkit-background-size: cover;
+              /* pour anciens Chrome et Safari */
+              background-size: cover;
+              /* version standardisée */
+              background-position: center center;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .contacter {
+                  h2 {
+                      text-align: center;
+                      font-family: "Aileron";
+                      font-size: 40px;
+                      margin-bottom: 70px;
+                      margin-top: 70px;
                   }
-                  article {
+                  hr {
+                      width: 25%;
+                      border: 0;
+                      height: 1px;
+                      background-image: linear-gradient(to right, transparent, #999, transparent);
+                  }
+                  .listContact {
                       margin: 20px auto;
-                      width: 40%;
+                      width: 100%;
+                      left: 0;
                       text-align: center;
                       position: relative;
-                      display: inline-block;
-                      vertical-align: top;
                       @media (max-width: 770px) {
                           width: 80%;
                       }
-                      p {
-                          padding-top: 10px;
-                          width: 92%;
-                          margin: auto;
+                      article {
+                          margin: 20px auto;
+                          width: 300px;
                           text-align: center;
-                          font-family: "OpenSansRegular";
-                          font-weight: bold;
+                          position: relative;
+                          display: inline-block;
+                          vertical-align: top;
                           @media (max-width: 770px) {
-                              width: 75%;
+                              width: 80%;
+                          }
+                          p {
+                              padding-top: 10px;
+                              width: 92%;
+                              margin: auto;
                               text-align: center;
-                          }
-                      }
-                      img {
-                          width: 15%;
-                          display: inline;
-                      }
-                      form {
-                          input[type=text] {
-                              border-top: 0;
-                              border-left: 0;
-                              border-right: 0;
-                              border-bottom: 2px solid black;
-                              background-color: transparent;
-                              // height: 20px;
-                              // margin-bottom: 20px;
-                              width: 70%;
-                              padding: 10px;
-                              transition: border-bottom .5s;
+                              font-family: "OpenSansRegular";
+                              font-weight: bold;
                               @media (max-width: 770px) {
-                                  width: 90%;
-                              }
-                              &:focus {
-                                  outline: none;
-                                  border-bottom: 2px solid #b01333;
+                                  width: 75%;
+                                  text-align: center;
                               }
                           }
-                          input[type=submit] {
-                              border: 2px solid black;
-                              background-color: transparent;
-                              padding: 10px;
-                              width: 150px;
-                              cursor: pointer;
-                              transition: all 1s;
-                              @media (max-width: 770px) {
+                          img {
+                              width: 15%;
+                              display: inline;
+                          }
+                          form {
+                              input[type=text] {
+                                  border-top: 0;
+                                  border-left: 0;
+                                  border-right: 0;
+                                  border-bottom: 2px solid black;
+                                  background-color: transparent;
+                                  // height: 20px;
+                                  // margin-bottom: 20px;
                                   width: 70%;
+                                  padding: 10px;
+                                  transition: border-bottom .5s;
+                                  @media (max-width: 770px) {
+                                      width: 90%;
+                                  }
+                                  &:focus {
+                                      outline: none;
+                                      border-bottom: 2px solid #b01333;
+                                  }
                               }
-                              &:focus {
-                                  outline: none;
+                              input[type=submit] {
+                                  border: 2px solid black;
+                                  background-color: transparent;
+                                  padding: 10px;
+                                  width: 150px;
+                                  cursor: pointer;
+                                  transition: all 1s;
+                                  @media (max-width: 770px) {
+                                      width: 70%;
+                                  }
+                                  &:focus {
+                                      outline: none;
+                                  }
+                                  &:hover {
+                                      background-color: black;
+                                      color: white;
+                                      border: 2px solid #b01333;
+                                  }
                               }
-                              &:hover {
-                                  background-color: black;
-                                  color: white;
-                                  border: 2px solid #b01333;
-                              }
-                          }
-                          textarea {
-                              border: 2px solid black;
-                              background-color: transparent;
-                              height: 100px;
-                              margin-bottom: 10px;
-                              width: 70%;
-                              max-width: 300px;
-                              padding: 10px;
-                              margin-top: 10px;
-                              color: black;
-                              transition: border .5s;
-                              @media (max-width: 770px) {
-                                  width: 90%;
-                              }
-                              &:focus {
-                                  outline: none;
-                                  border: 2px solid #b01333;
+                              textarea {
+                                  border: 2px solid black;
+                                  background-color: transparent;
+                                  height: 100px;
+                                  margin-bottom: 10px;
+                                  width: 70%;
+                                  /* max-width: 300px; */
+                                  padding: 10px;
+                                  margin-top: 10px;
+                                  color: black;
+                                  transition: border .5s;
+                                  @media (max-width: 770px) {
+                                      width: 90%;
+                                  }
+                                  &:focus {
+                                      outline: none;
+                                      border: 2px solid #b01333;
+                                  }
                               }
                           }
                       }
                   }
               }
+          }
+          footer {
+              clear: both;
               .copyright {
                   font-family: "OpenSansRegular";
-                  font-size: 10px;
+                  padding-top:5px;
+                  font-size: 12px;
                   text-align: center;
-                  margin: 40px 0 25px 0;
+                  margin: 0px 0 25px 0;
               }
           }
       }
