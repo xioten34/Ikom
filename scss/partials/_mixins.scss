@@ -69,11 +69,3 @@ $notosans-fontface-path: '../../fonts' !default;
         transform: translateY(-50%);
     }
 }
-
-@mixin vertical {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    /* ancien IE */
-    -ms-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}

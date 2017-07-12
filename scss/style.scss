@@ -111,7 +111,7 @@
               display: block;
               position: fixed;
               z-index: 20;
-              bottom: 30px;
+              bottom: 50px;
               height: 44px;
               width: 44px;
               @include center(x);
@@ -421,7 +421,7 @@
                           text-align: justify;
                           font-family: "OpenSansRegular";
                           @media (max-width: 500px) {
-                              width: 75%;
+                              width: 100%;
                           }
                       }
                       img {
@@ -559,7 +559,7 @@
                               text-align: justify;
                               font-family: "OpenSansRegular";
                               @media (max-width: 500px) {
-                                  width: 75%;
+                                  width: 100%;
                               }
                           }
                       }
@@ -571,7 +571,7 @@
               }
           }
           .contact {
-              background: url(../images/background/agence_communication_touristique_white.jpg);
+              background: url(../images/background/contact_ikom.jpg);
               min-height: 100vh;
               -webkit-background-size: cover;
               /* pour anciens Chrome et Safari */
