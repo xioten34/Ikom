@@ -107,6 +107,35 @@
                   }
               }
           }
+          .social{
+              position: fixed;
+              z-index: 18;
+              @include center(y);
+              right: 30px;
+              width: 30px;
+              @media (max-width: 500px){
+                  width: 20px;
+              }
+              img{
+                  width: 30px;
+                  height: auto;
+                  &:nth-child(1){
+                      
+                  }
+                  &:nth-child(2){
+                      
+                  }
+                  &:nth-child(3){
+                      
+                  }
+                  &:nth-child(4){
+                      
+                  }
+                  @media (max-width: 500px){
+                      width: 20px;
+                  }
+              }
+          }
           .bouton_mobile {
               display: block;
               position: fixed;
