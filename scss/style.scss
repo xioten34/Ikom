@@ -107,31 +107,23 @@
                   }
               }
           }
-          .social{
+          .social {
               position: fixed;
               z-index: 18;
               @include center(y);
               right: 30px;
               width: 30px;
-              @media (max-width: 500px){
-                  width: 20px;
+              @media (max-width: 500px) {
+                  display: none;
               }
-              img{
+              img {
                   width: 30px;
                   height: auto;
-                  &:nth-child(1){
-                      
-                  }
-                  &:nth-child(2){
-                      
-                  }
-                  &:nth-child(3){
-                      
-                  }
-                  &:nth-child(4){
-                      
-                  }
-                  @media (max-width: 500px){
+                  &:nth-child(1) {}
+                  &:nth-child(2) {}
+                  &:nth-child(3) {}
+                  &:nth-child(4) {}
+                  @media (max-width: 500px) {
                       width: 20px;
                   }
               }
@@ -217,7 +209,7 @@
               height: 100%;
               background: $overlay;
               z-index: 19;
-              div {
+              .men {
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: flex;
@@ -229,23 +221,34 @@
                   -webkit-box-align: center;
                   -ms-flex-align: center;
                   align-items: center;
-              }
-              ul {
-                  list-style: none;
-                  margin: 0;
-                  padding: 0;
-                  color: white;
-                  text-align: center;
-                  li a {
-                      color: #424134;
-                      font-size: 4.5vh;
-                      text-transform: uppercase;
-                      text-decoration: none;
-                      line-height: 48px;
-                      transition: all 0.5s;
-                      @include suppr-contour;
-                      &:hover {
-                          color: $color-1;
+                  ul {
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      color: white;
+                      text-align: center;
+                      li a {
+                          color: #424134;
+                          font-size: 4.5vh;
+                          text-transform: uppercase;
+                          text-decoration: none;
+                          line-height: 48px;
+                          transition: all 0.5s;
+                          @include suppr-contour;
+                          &:hover {
+                              color: $color-1;
+                          }
+                      }
+                  }
+                  .social_mobile {
+                      margin-top: 25px;
+                      img {
+                          @media (max-width: 500px) {
+                              width: 30px;
+                          }
+                      }
+                      @media (min-width: 500px){
+                          display: none;
                       }
                   }
               }
@@ -577,8 +580,8 @@
                           @media (max-width: 500px) {
                               width: 80%;
                           }
-                          @media (min-width:1400px){
-                              width:10%;
+                          @media (min-width:1400px) {
+                              width: 10%;
                           }
                           p {
                               padding-top: 10px;
@@ -729,7 +732,7 @@
               clear: both;
               .copyright {
                   font-family: "OpenSansRegular";
-                  padding-top:5px;
+                  padding-top: 5px;
                   font-size: 12px;
                   text-align: center;
                   margin: 0px 0 25px 0;
